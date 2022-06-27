@@ -26,4 +26,11 @@ describe Calculator do
       expect(calculator.multiply(4, 2, 6, 9)).to eql(432)
     end
   end
+
+  describe '#subtract' do
+    it 'returns the difference of two numbers' do
+      calculator = Calculator.new
+      expect(calculator.subtract(9, 6)).to eql(3)
+    end
+  end
 end
