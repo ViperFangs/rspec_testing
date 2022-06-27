@@ -4,9 +4,9 @@ class Calculator
   def add(*args)
     result = 0
 
-    args.each do |number|
-      result += number
-    end
+    return 0 if args.length.zero?
+
+    args.each { |number| result += number }
 
     result
   end
