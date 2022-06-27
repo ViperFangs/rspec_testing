@@ -1,7 +1,13 @@
 #lib/calculator.rb
 
 class Calculator
-  def add(a,b)
-    a + b
+  def add(*args)
+    result = 0
+
+    args.each do |number|
+      result += number
+    end
+
+    result
   end
 end
