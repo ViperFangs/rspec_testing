@@ -14,4 +14,16 @@ describe Calculator do
       expect(calculator.add(2, 5, 7)).to eql(14)
     end
   end
+
+  describe '#multiply' do
+    it 'returns the product of two numbers' do
+      calculator = Calculator.new
+      expect(calculator.multiply(6, 9)).to eql(54)
+    end
+
+    it 'returns the product of more than two numbers' do
+      calculator = Calculator.new
+      expect(calculator.multiply(4, 2, 6, 9)).to eql(432)
+    end
+  end
 end
