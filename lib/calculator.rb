@@ -20,4 +20,9 @@ class Calculator
   def subtract(a, b)
     a - b
   end
+
+  def division(a, b)
+    a.to_f / b
+  end
 end
+
